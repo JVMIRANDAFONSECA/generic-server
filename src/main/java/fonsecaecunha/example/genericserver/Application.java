@@ -11,10 +11,19 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application {
 
+	
+	/** 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
+	
+	/** 
+	 * @param ctx
+	 * @return CommandLineRunner
+	 */
 	@Bean
 	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 		return args -> {

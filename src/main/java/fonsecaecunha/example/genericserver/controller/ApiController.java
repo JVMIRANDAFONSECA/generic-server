@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ApiController {
 
 
+    
+    /** 
+     * @return String
+     */
     @RequestMapping("/helloWorld")
     public String index() {
         return "Hello World!";
